@@ -1,0 +1,60 @@
+@mixin box-sizing($size) {
+  -webkit-box-sizing: $size;
+  -moz-box-sizing: $size;
+  box-sizing: $size;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin no-select() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin transform-rotate($deg) {
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin transition($prop, $time) {
+  -webkit-transition: $prop $time;
+  -moz-transition: $prop $time;
+  -ms-transition: $prop $time;
+  -o-transition: $prop $time;
+  transition: $prop $time;
+}
+
+@mixin transform-style($style) {
+  -webkit-transform-style: $style;
+  -moz-transform-style: $style;
+  transform-style: $style;
+}
+
+@mixin transform($trans) {
+  -webkit-transform: $trans;
+  -moz-transform: $trans;
+  -ms-transform: $trans;
+  -o-transform: $trans;
+  transform: $trans;
+}
+
+@mixin perspective($pres) {
+  -webkit-perspective: $pres;
+  -moz-perspective: $pres;
+  perspective: $pres;
+}
